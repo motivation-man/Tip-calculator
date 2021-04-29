@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Tip_Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <h1>TIP CALCULATOR</h1>
+
+    <p>
+      Calculator your tip by entering the bill total and the tip percent in the
+      below fields.
+    </p>
+
+    <form>
+
+      <!--Bill Total Input-->
+      <label for="bill_total">Bill Total:</label>
+      <input type="number" id="bill_total" name="bill_total">
+
+      <br><br>
+
+      <!--Tip Percent Input-->
+      <label for="tip_percent">Tip Percent:</label>
+      <input type="number" id="tip_percent" name="tip_percent"> %
+
+      <br><br>
+
+      <!--Number of people input-->
+      <label for="no_of_people">Number of People</label>
+      <input type="number" id="no_of_people" name="no_of_people"> 
+
+      <br><br>
+
+      <!--Calculate Button-->
+      <button type="button" id="calculate">Click to calculate</button>
+      
+      <br><br>
+
+    </form>
+
+    <div> Your Tip is - </div>
+    <div id="totalTip">
+        <span id="tip">0.00</span>
+    </div>
+    <div> Your Bill Total is is - </div>
+    <div id="totalBill">
+        <span id="bill">0.00</span>
+    </div>
+    <div> The split amount is - </div>
+    <div id="splitBill">
+        <span id="split">0.00</span>
+    </div>
+  </body>
+</html>
